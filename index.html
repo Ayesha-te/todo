@@ -4,12 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Animated To-Do Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Poppins', sans-serif;
       overflow: hidden;
     }
 
@@ -79,6 +80,9 @@
     .login-box h2 {
       text-align: center;
       margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
     }
 
     .login-box input {
@@ -136,13 +140,18 @@
 
     .main-content {
       flex-grow: 1;
-      padding: 40px;
+      padding: 60px 50px;
+      font-size: 18px;
       overflow-y: auto;
       animation: fadeSlide 1s ease;
     }
 
     .main-content h2 {
       margin-top: 0;
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 20px;
+      color: #ffffff;
     }
 
     .section {
@@ -185,7 +194,8 @@
       background: #fff;
       color: #111;
       margin-bottom: 10px;
-      padding: 12px;
+      padding: 14px;
+      font-size: 17px;
       border-left: 5px solid #3498db;
       border-radius: 4px;
     }
@@ -237,7 +247,7 @@
       </div>
 
       <div id="tasks" class="section">
-        <h2>My Tasks</h2>
+        <h2>My  Completed Tasks</h2>
         <input id="taskInput" type="text" placeholder="New task" />
         <button class="add-btn" onclick="addItem('task')">Add</button>
         <ul id="taskList"></ul>
